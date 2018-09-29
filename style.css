@@ -15,7 +15,7 @@ p, a, span, li {
 }
 
 .container {
-  width: 80%;
+  width: 87%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -67,30 +67,28 @@ p, a, span, li {
   width: 100%;
   height: 100vh;
   background-color: #d57a67;
+  padding-top: 100px;
 }
 
 .display {
   width: 100%;
   height: 100%;
-  border: 2px solid black;
-  margin-top: 15%;
   box-sizing: border-box;
 }
 
 .row1 {
   width: 100%;
-  height: 400px;
+  height: 270px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .item {
-  width: 30%;
-  display: inline-block;
+  width: 32%;
   height: 100%;
-  background-color: white;
-  margin: 20px;
+  display: inline-block;
+  background-image: url("../img/Asset 1.png");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
