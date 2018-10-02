@@ -6,6 +6,10 @@ p, a, span, li {
   font-family: "Roboto", sans-serif;
 }
 
+span {
+  text-transform: uppercase;
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -22,6 +26,7 @@ p, a, span, li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .content {
@@ -37,6 +42,7 @@ p, a, span, li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
 }
 
 .title {
@@ -46,6 +52,8 @@ p, a, span, li {
 #nav-wrapper {
   display: block;
   width: 100%;
+  position: absolute;
+  bottom: 25px;
 }
 
 .nav {
@@ -66,7 +74,7 @@ p, a, span, li {
 #projects {
   width: 100%;
   height: 100vh;
-  background-color: #d57a67;
+  background-color: #b7685f;
   padding-top: 100px;
 }
 
@@ -78,17 +86,32 @@ p, a, span, li {
 
 .row1 {
   width: 100%;
-  height: 270px;
+  height: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .item {
   width: 32%;
-  height: 100%;
+  height: auto;
   display: inline-block;
-  background-image: url("../img/Asset 1.png");
-  background-size: cover;
+  position: relative;
+}
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.blurb {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  text-align: center;
+  padding: 35px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: none;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
