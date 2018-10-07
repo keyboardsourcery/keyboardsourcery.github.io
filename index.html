@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="../reset.css">
-  <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../scripts.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Home | Vince Trombino | Portfolio</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts.js"></script>
+  </head>
 <body>
-  <div class="header">
+  <div class="landing">
     <div class="container">
-
       <div class="content">
-        <h1 class="title">Vince Trombino</h1>
-        <span class="subTitle">Designer | Developer | Right-Hand Man</span>
-      </div>
 
-      <div id="nav-wrapper">
-        <ul class="nav">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
+        <div class="jumbotron">
+          <h1 class="title">Vince Trombino</h1>
+          <span class="subTitle">Designer | Developer | Right-Hand Man</span>
+        </div>
 
+        <div id="nav-wrapper">
+          <ul id="nav1">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   </div>
 
@@ -32,27 +36,50 @@
     <div class="container">
       <div class="display">
 
-        <div class="row1">
-          <div class="item item1">
-            <a href="">
+
+        <div class="row">
+          <div class="col-3">
+            <a href="html/ez.html">
               <span class="blurb">Abstract Design</span>
-              <img src="../img/ez_square.png">
+              <img class="thumbnail" src="../img/thumbnails/ez_square.png">
             </a>
           </div>
-          <div class="item item2">
-            <a href="">
+
+          <div class="col-3">
+            <a href="html/vanther.html">
               <span class="blurb">Illustration</span>
-              <img src="../img/vanther_square.jpg">
+              <img class="thumbnail" src="../img/thumbnails/vanther_square.jpg">
             </a>
           </div>
-          <div class="item item3">
-            <a href="">
-              <img src="../img/scabySet3.jpg">
+
+          <div class="col-3">
+            <a href="html/scaby.html">
               <span class="blurb">Logo Set</span>
+              <img class="thumbnail" src="../img/thumbnails/scabySet3.jpg">
             </a>
           </div>
         </div>
 
+
+
+        <div class="row">
+          <div class="col-2">
+            <a href="html/evisors.html">
+              <span class="blurb">Abstract Design</span>
+              <img class="thumbnail" src="../img/thumbnails/EvisorsMock32.jpg">
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="html/StrayFurther.html">
+              <span class="blurb">Abstract Design</span>
+              <img class="thumbnail" src="../img/thumbnails/blogBlurred32.jpg">
+            </a>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   </div>
 </body>

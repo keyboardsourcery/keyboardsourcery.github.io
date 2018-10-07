@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-$('.item').hover(function() {
+$('.col-3').hover(function() {
   $('.blurb').toggle();
 });
 
