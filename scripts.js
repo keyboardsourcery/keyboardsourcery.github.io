@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
-$('.col-3').hover(function() {
-  $('.blurb').toggle();
+$('.thumbnail').hover(function() {
+  $(this).siblings().toggle();
+
 });
 
 });
