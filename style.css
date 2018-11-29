@@ -14,8 +14,12 @@ body {
   background-color: #d57a67;
 }
 
+a {
+  color: #dcd9c6;
+}
+
 a:visited {
-  color: inherit;
+  color: #dcd9c6;
 }
 
 #landing {
@@ -68,10 +72,13 @@ h1 {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 25px;
+  bottom: 10px;
 }
 
 #nav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 #nav1 li a {
@@ -80,9 +87,10 @@ h1 {
   font-weight: 700;
   text-decoration: none;
   color: #dcd9c6;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.5em;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 #nav2 {
@@ -114,6 +122,17 @@ h1 {
 #logo {
   height: 100%;
   width: auto;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+#footer .social {
+  padding: 0 5px;
 }
 
 #projects {
