@@ -1,9 +1,38 @@
 h1, h2, h3, h4, h5 {
   font-family: "Anton", sans-serif;
+  color: #dcd9c6;
 }
 
 p, a, span, li {
   font-family: "Roboto", sans-serif;
+  color: #dcd9c6;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h3 {
+  font-size: 30px;
+  color: #dcd9c6;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 100px 0;
+}
+#footer .social {
+  padding: 0 5px;
+}
+#footer #bio {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 * {
@@ -64,24 +93,26 @@ a:visited {
   align-items: center;
 }
 
-h1 {
-  font-size: 65px;
+@keyframes bounce {
+  0% {
+    bottom: 0 box-shadow 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    bottom: 50px box-shadow 0 50px 50px rgba(0, 0, 0, 0.1);
+  }
+}
+#nav-arrow {
+  animation: bounce 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
 
-#nav-wrapper {
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 10px;
-}
-
-#nav1 {
+#nav-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
+  position: absolute;
+  bottom: 1px;
 }
-#nav1 li a {
+#nav-arrow li a {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 700;
@@ -122,17 +153,6 @@ h1 {
 #logo {
   height: 100%;
   width: auto;
-}
-
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-}
-#footer .social {
-  padding: 0 5px;
 }
 
 #projects {
