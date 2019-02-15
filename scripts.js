@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
-$('.thumbnail').hover(function() {
-  $(this).siblings().toggle();
+$('.blurb').hide();
+
+$('.preview').hover(function() {
+  $(this).children().first().toggle();
 
 });
+
+
 
 });

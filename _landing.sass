@@ -52,16 +52,29 @@ a:visited
   justify-content: center
   align-items: center
 
-@media (max-width: 375px)
+  
+
+@media (max-width: 510px)
   .container
     width: 100%
 
   .jumbotron
-    width: 375px
-    height: 375px
+    width: 90vw
+    height: 90vw
 
-  h1
-    display: none
+    h1
+      font-size: 50px
 
-  .subTitle
-    display: none
+    .subTitle
+      font-size: 12px
+
+  #landing
+    height: 80vh
+
+@media (max-width: 420px)
+  .jumbotron
+    h1
+      font-size: 40px
+
+    .subTitle
+      font-size: 8px
