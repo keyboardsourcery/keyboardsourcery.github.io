@@ -60,8 +60,7 @@ a:visited {
 #landing {
   width: 100%;
   height: 100vh;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   background-color: #d57a67;
   box-shadow: 0px 20px black;
 }
@@ -72,22 +71,32 @@ a:visited {
   margin: 0 auto;
   position: relative;
   max-width: 1500px;
+  position: relative;
+}
+
+.grid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10% auto 10%;
+  place-items: center;
+}
+.grid #nav-arrow {
+  grid-column: 1;
+  grid-row: 3;
 }
 
 #content {
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  display: block;
+  padding-top: calc(50vh - 250px);
 }
 
 .jumbotron {
   width: 500px;
   height: 500px;
-  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   color: #dcd9c6;
@@ -98,16 +107,18 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-column: 1;
+  grid-row: 2;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 625px) {
   .container {
     width: 100%;
   }
 
   .jumbotron {
-    width: 90vw;
-    height: 90vw;
+    width: 450px;
+    height: 450px;
   }
   .jumbotron h1 {
     font-size: 50px;
@@ -115,14 +126,18 @@ a:visited {
   .jumbotron .subTitle {
     font-size: 12px;
   }
-
-  #landing {
-    height: 80vh;
-  }
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .jumbotron {
+    width: 300px;
+    height: 300px;
+  }
   .jumbotron h1 {
-    font-size: 40px;
+    font-size: 37px;
   }
   .jumbotron .subTitle {
     font-size: 8px;
@@ -177,7 +192,7 @@ a:visited {
 #projects {
   width: 100%;
   height: auto;
-  background-color: #b7685f;
+  background-color: #F4856A;
   padding: 75px 0;
 }
 
@@ -241,7 +256,7 @@ a:visited {
 }
 
 @media (max-width: 500px) {
-  .container {
+  .container1 {
     width: 90%;
     height: auto;
   }
